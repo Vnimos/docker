@@ -5,6 +5,9 @@ FROM centos:6.8
 
 MAINTAINER vnimos
 
+# Configure the environment
+ENV LANG en_US.UTF-8
+
 # Install and Configure the Supervisor
 RUN yum -y install python-setuptools
 RUN easy_install supervisor
